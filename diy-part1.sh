@@ -15,3 +15,5 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+sed -i 's/192.168.1.1/192.168.100.2/g' package/base-files/files/bin/config_generate
