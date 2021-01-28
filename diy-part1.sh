@@ -15,6 +15,4 @@
 
 # Add a feed source
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '/+PACKAGE_$(PKG_NAME)_INCLUDE_Xray:xray/d' feeds/passwall/luci-app-passwall/Makefile
-
 sed -i 's/192.168.1.1/10.0.0.10/g' package/base-files/files/bin/config_generate
